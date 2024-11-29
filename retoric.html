@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="retoric-sty.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Anuphan:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>La Retorica</title>
+</head>
+<body>
+    <div></div>
+    <div id="master">
+
+        <div id="game">
+            <div id="squadre">
+                <p class="team">SENECA<span class="mini">s</span></p>
+                <p class="team">PLATONE<span class="mini">s</span></p>
+            </div>
+            <div id="boards">
+                <div class="board">
+                    <div class="score">
+                        <div class="leader" id="s-leader"></div>
+                        <div id="seneca-point" class="score-num">0</div>
+                    </div>
+                    <div class="j-button-container">
+                        <button class="j-button" onclick="add1S()">+1</button>
+                        <button class="j-button" onclick="add3S()">+3</button>
+                        <button class="j-button" onclick="add5S()">+5</button>
+                    </div>
+                </div>
+
+                <div id="timer">00 : 00</div>
+
+                <div class="board">
+                    <div class="score">
+                        <div class="leader" id="p-leader"></div>
+                        <div id="platone-point"  class="score-num">0</div>
+                    </div>
+                    <div class="j-button-container">
+                        <button class="j-button" onclick="add1P()">+1</button>
+                        <button class="j-button" onclick="add3P()">+3</button>
+                        <button class="j-button" onclick="add5P()">+5</button>
+                    </div>
+                </div>
+            </div>
+
+            <button id="reset" onclick="reset()">NEW GAME</button>
+
+            <div id="winner">
+                <div class="pallin"></div>
+                <div class="pallin"></div>
+                <div class="pallin"></div>
+            </div>
+        </div>
+    </div>
+    <div></div>
+<script src="retoric-js.js"></script>
+</body>
+</html>
